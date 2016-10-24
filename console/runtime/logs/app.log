@@ -1,0 +1,69 @@
+2016-09-21 05:36:42 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'console\controllers\RbacController' in file: C:\xampp\htdocs\advanced/console/controllers/RbacController.php. Namespace missing? in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(562): class_exists('console\\control...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('rbac')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('init')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 C:\xampp\htdocs\advanced\yii(27): yii\base\Application->run()
+#9 {main}
+2016-09-21 05:36:42 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ripxs\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-248JFQR'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'GTK_BASEPATH' => 'C:\\GTK'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ripxs'
+    'JD2_HOME' => 'C:\\Users\\ripxs\\AppData\\Local\\JDownloader v2.0'
+    'LOCALAPPDATA' => 'C:\\Users\\ripxs\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Virtools\\3D Life Player\\'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'PANGO_WIN32_NO_UNISCRIBE' => 'anything'
+    'Path' => 'C:\\GTK\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\adb;C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\;C:\\Program Files (x86)\\LyX 2.2\\Perl\\bin;C:\\xampp\\php;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files (x86)\\Cracklock\\Bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4501'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ripxs\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ripxs\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-248JFQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-248JFQR'
+    'USERNAME' => 'ripxs'
+    'USERPROFILE' => 'C:\\Users\\ripxs'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1474429002.0392
+    'REQUEST_TIME' => 1474429002
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]

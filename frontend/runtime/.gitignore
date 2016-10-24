@@ -1,2 +1,6 @@
 *
 !.gitignore
+!/HTML/
+!/URI/
+!/debug/
+!/logs/
