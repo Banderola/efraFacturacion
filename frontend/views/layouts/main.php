@@ -277,6 +277,18 @@ DashboardAsset::register($this);
                     <span class="lbl">Tareas</span>
                 </a>
             </li>
+            <li class="gold with-sub">
+                 <span>
+                    <i class="fa fa-folder-open"></i>
+                    <span class="lbl">Catálogos</span>
+                 </span>
+                 <ul>
+                    <li><a href="ui-form.html"><span class="lbl">Profeciones</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Estado Socios</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Provincia</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Municipio</span></a></li>
+                </ul>
+            </li>
             <li class="red">
                 <a href="tables.html">
                     <span class="font-icon font-icon-del"></span>
