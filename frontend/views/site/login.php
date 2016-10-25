@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
+$this->title = 'Inicio de sesión';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
@@ -17,14 +17,14 @@ $this->title = 'Login';
                     <div class="sign-avatar">
                         <?php echo Html::img('@web/img/avatar-sign.png') ?>
                     </div>
-                    <header class="sign-title">Sign In</header>
+                    <header class="sign-title">Inicio Sesión</header>
 
                     <div class="form-group">
-                        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Username','class' => 'form-control'])->label(false) ?>
+                        <?= $form->field($model, 'username')->textInput(['placeholder' => $model->getAttributeLabel('username'),'class' => 'form-control'])->label(false) ?>
                     </div>
                     <div class="form-group">
                         
-                        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Password','class' => 'form-control'])->label(false) ?>
+                        <?= $form->field($model, 'password')->passwordInput(['placeholder' => $model->getAttributeLabel('password'),'class' => 'form-control'])->label(false) ?>
                     </div>
                     <div class="form-group">
                         <div class="checkbox float-left">
@@ -33,14 +33,14 @@ $this->title = 'Login';
         ]); ?>
                         </div>
                         <div class="float-right reset">
-                            <?= Html::a('Reset Password', ['site/request-password-reset']) ?>
+                            <?= Html::a('Reiniciar Contraseña', ['site/request-password-reset']) ?>
                         </div>
                     </div>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Inicio de Sesión', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?>
                 </div>
-                <p class="sign-note">New to our website? <?= Html::a('Sign up', ['site/signup']) ?></p>
+                <p class="sign-note">¿No tiene una cuenta? <?= Html::a('Crear cuenta', ['site/signup']) ?></p>
 
             <?php ActiveForm::end(); ?>
         

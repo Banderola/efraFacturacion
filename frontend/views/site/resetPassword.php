@@ -7,7 +7,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Reset password';
+$this->title = 'Reiniciar Contraseña';
 ?>
 <div class="site-reset-password">
 
@@ -22,7 +22,7 @@ $this->title = 'Reset password';
                 <div class="form-group">
                     <?= Html::submitButton('Reset', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?>
                 </div>
-                <p class="sign-note">or <?= Html::a('Sign in', ['site/login']) ?></p>
+                <p class="sign-note">o <?= Html::a('Inicio de sesión', ['site/login']) ?></p>
 
         <?php ActiveForm::end(); ?>
 

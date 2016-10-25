@@ -25,7 +25,7 @@ class PasswordResetRequestForm extends Model
             ['email', 'exist',
                 'targetClass' => '\common\models\User',
                 'filter' => ['status' => User::STATUS_ACTIVE],
-                'message' => 'There is no user with such email.'
+                'message' => 'El usuario no coincide con el correo electronico.'
             ],
         ];
     }
@@ -64,5 +64,13 @@ class PasswordResetRequestForm extends Model
             ->setTo($this->email)
             ->setSubject('Password reset for ' . Yii::$app->name)
             ->send();
+    }
+    
+    public function attributeLabels()
+    {
+        return [
+            'email' => 'Correo Electronico',
+            
+        ];
     }
 }

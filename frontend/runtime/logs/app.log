@@ -8406,3 +8406,83 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1476816674.461
     'REQUEST_TIME' => 1476816674
 ]
+2016-10-25 20:28:56 [::1][-][k9vdcuattrvv1ohish6489hec0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::Recuerdame in C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\base\Component->__get('Recuerdame')
+#1 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\helpers\BaseHtml.php(1431): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'Recuerdame')
+#2 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\helpers\BaseHtml.php(1413): yii\helpers\BaseHtml::activeBooleanInput('checkbox', Object(common\models\LoginForm), 'Recuerdame', Array)
+#3 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\widgets\ActiveField.php(548): yii\helpers\BaseHtml::activeCheckbox(Object(common\models\LoginForm), 'Recuerdame', Array)
+#4 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2-bootstrap\ActiveField.php(212): yii\widgets\ActiveField->checkbox(Array, false)
+#5 C:\xampp\htdocs\efraFacturacion\frontend\views\site\login.php(32): yii\bootstrap\ActiveField->checkbox(Array)
+#6 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\efraFacturacion\frontend\controllers\SiteController.php(105): yii\base\Controller->render('login', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionLogin()
+#12 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#15 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/login', Array)
+#16 C:\xampp\htdocs\efraFacturacion\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\efraFacturacion\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2016-10-25 20:28:56 [::1][-][k9vdcuattrvv1ohish6489hec0][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'k9vdcuattrvv1ohish6489hec0'
+    '_csrf-frontend' => 'b1cddb7ba7858991da6d4bb3bdc798f4c2a0c844a32a0ca0688787586a032efba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7Yaf86018lv2Gy9p2DAWd7ZkxAy3sETc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/efraFacturacion/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=k9vdcuattrvv1ohish6489hec0; _csrf-frontend=b1cddb7ba7858991da6d4bb3bdc798f4c2a0c844a32a0ca0688787586a032efba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227Yaf86018lv2Gy9p2DAWd7ZkxAy3sETc%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\;C:\\Program Files (x86)\\LyX 2.2\\Perl\\bin;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/efraFacturacion/frontend/web/index.php'
+    'REMOTE_PORT' => '50292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/efraFacturacion/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/efraFacturacion/frontend/web/index.php'
+    'PHP_SELF' => '/efraFacturacion/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477420136.234
+    'REQUEST_TIME' => 1477420136
+]

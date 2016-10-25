@@ -7,21 +7,21 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Request password reset';
+$this->title = 'Peticion de reinicio de contraseña';
 ?>
 <div class="site-request-password-reset">
 
         <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form','options' => ['class' => 'sign-box reset-password-box'],]) ?>
-                    <header class="sign-title">Reset Token</header>
+                    <header class="sign-title">Clave de Reinicio</header>
 
                     <div class="form-group">
-                        <?= $form->field($model, 'email')->textInput(['placeholder' => 'Email','class' => 'form-control'])->label(false) ?>
+                        <?= $form->field($model, 'email')->textInput(['placeholder' => $model->getAttributeLabel('email'),'class' => 'form-control'])->label(false) ?>
                     </div>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Enviar', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?>
+                    <center><?= Html::submitButton('Enviar', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?></center>
                 </div>
-                <p class="sign-note">or <?= Html::a('Sign in', ['site/login']) ?></p>
+                <p class="sign-note">o <?= Html::a('Inicio de sesión', ['site/login']) ?></p>
 
         <?php ActiveForm::end(); ?>
     

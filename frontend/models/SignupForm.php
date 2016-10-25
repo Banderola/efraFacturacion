@@ -24,14 +24,14 @@ class SignupForm extends Model
         return [
             ['username', 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Este nombre de usuario ya se encuentra registrado.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Este correo electronico ya se encuentra registrado.'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -65,4 +65,17 @@ class SignupForm extends Model
 
         return null;
     }
+    
+    
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Nombre de Usuario',
+            'password' => 'Contraseña',
+            'email' => 'Correo Electronico',
+            
+        ];
+    }
+    
+    
 }
