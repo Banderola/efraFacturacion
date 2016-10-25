@@ -417,7 +417,7 @@ DashboardAsset::register($this);
             <span class="fa fa-angle-double-left"></span>
         </a>
     </div>
-    <div class="container">
+   
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
